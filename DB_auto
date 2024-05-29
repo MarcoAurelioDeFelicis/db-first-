@@ -1,0 +1,38 @@
+# DB Auto Usate Concessionaria
+
+## Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardanti delle auto usate messe in vendita da un concessionario 
+
+NOME COLONNA                       TIPO                               ATTRIBUTI                              INDICI       	    
+
+id_auto                            int                                AUTO_INCREMENT                         primary key
+targa                              varchar(10)                        unique, not null
+numero_telaio                      varchar(17)                        unique, not null
+paese_provenienza                  varchar(15)                        not null
+marca                              varchar(20)                        not null
+modello                            varchar(50)                        unique, not null
+versione_auto                      varchar(100)                       not null default (1)
+anno_immatricolazione              year                               not null
+livelli_emissioni_CO2              int                                not null
+cilindrata                         int                                not null
+potenza_motore                     decimal (5,2)                      not null
+cavalli                            int                                not null
+motore_tipo                        varchar (10)                       not null
+carburante_tipo                    varchar (15)                       not null 
+accensione_tipo                    varchar (30)                       not null
+turbo                              tinyint                            not null
+numero_porte                       int                                not null
+numero_posti                       int                                not null
+altezza                            decimal (3,2)                      not null
+lunghezza                          decimal (3,2)                      not null
+peso                               decimal (3,2)                      not null
+passo_auto                         varchar (10)                       not null
+pneumatici_dimensioni              varchar (15)                       not null
+ruote_motrici                      int                                not null
+trazione_tipo                      varchar(10)                        not null
+freni_tipo                         varchar(10)                        not null
+numero_incidenti                   int                                not null
+revisioni_passate                  int                                null   
+ultima_revisione                   int                                null
+stereo                             tinyint                            null
+aria_condizionata                  tinyint                            null
+
